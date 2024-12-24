@@ -4,11 +4,11 @@ import { Search, RefreshCcw, Globe, Radio, Apple } from "lucide-react";
 const NewsPage = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState("top"); // 'top', 'everything', 'bbc'
+  const [activeTab, setActiveTab] = useState("top");
   const [searchQuery, setSearchQuery] = useState("");
 
   const fetchNews = async (type, query = "") => {
-    const API_KEY = "140fb41a0e09493d9beafa9893943023";
+    const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
     const BASE_URL = "https://newsapi.org/v2";
 
     let url;
@@ -30,7 +30,7 @@ const NewsPage = () => {
     setLoading(true);
     const response = await fetch(url);
     const data = await response.json();
-    setArticles(data.articles.filter((article) => article.source.id)); // Filter articles with valid id
+    setArticles(data.articles.filter((article) => article.source.id));
     setLoading(false);
   };
 

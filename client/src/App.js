@@ -8,6 +8,7 @@ import { AuthProvider } from "./Authorisation/AuthProvider";
 import TodoList from "./Pages/ToDoList";
 import NewsPage from "./Pages/NewsPage";
 import LearningCenter from "./Pages/Learnings";
+import UserProfile from "./Pages/ProfilePage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/todos" element={<TodoList />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/learn" element={<LearningCenter />} />
+          <Route path="/profiles" element={<UserProfile />} />
         </Routes>
       </AuthProvider>
     </div>
