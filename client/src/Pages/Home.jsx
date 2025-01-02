@@ -1,14 +1,8 @@
 import React from "react";
 import { Layout } from "lucide-react";
 import { UserCircle } from "lucide-react";
-import { Briefcase } from "lucide-react";
 import { BookOpen } from "lucide-react";
-import { Users } from "lucide-react";
-import { Bike } from "lucide-react";
 import { Newspaper } from "lucide-react";
-import { MessageCircle } from "lucide-react";
-import { Share2 } from "lucide-react";
-import { CheckSquare } from "lucide-react";
 
 const HomePage = () => {
   const features = [
@@ -19,52 +13,16 @@ const HomePage = () => {
       link: "/profiles",
     },
     {
-      icon: Briefcase,
-      title: "Job Board",
-      description: "Find opportunities and connect with employers",
-      link: "/jobs",
-    },
-    {
       icon: BookOpen,
       title: "Learning Center",
       description: "Access courses and educational content",
       link: "/learn",
     },
     {
-      icon: Users,
-      title: "Community",
-      description: "Connect with other users and build relationships",
-      link: "/community",
-    },
-    {
-      icon: Bike,
-      title: "Bike Sharing",
-      description: "Book and share bikes with other users",
-      link: "/bikes",
-    },
-    {
       icon: Newspaper,
       title: "Daily Tech News",
       description: "Stay updated with the latest tech news",
       link: "/news",
-    },
-    {
-      icon: MessageCircle,
-      title: "Chat",
-      description: "Real-time communication with other users",
-      link: "/chat",
-    },
-    {
-      icon: Share2,
-      title: "Content Sharing",
-      description: "Share and view images and videos",
-      link: "/share",
-    },
-    {
-      icon: CheckSquare,
-      title: "To-do Lists",
-      description: "Manage your personal tasks",
-      link: "/todos",
     },
   ];
 
