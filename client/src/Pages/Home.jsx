@@ -19,6 +19,12 @@ const HomePage = () => {
       link: "/learn",
     },
     {
+      icon: BookOpen,
+      title: "Roadmap",
+      description: "Access courses and educational content",
+      link: "/road",
+    },
+    {
       icon: Newspaper,
       title: "Daily Tech News",
       description: "Stay updated with the latest tech news",
