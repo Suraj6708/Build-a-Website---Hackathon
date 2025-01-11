@@ -10,6 +10,8 @@ import LearningCenter from "./Pages/Learnings";
 import UserProfile from "./Pages/ProfilePage";
 import VerticalRoadmap from "./Pages/Roadmap";
 import YouTubeShorts from "./components/Shorts";
+import FinancialAdvisor from "./Pages/Heropage";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -19,12 +21,14 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegistrationPage />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<FinancialAdvisor />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/learn" element={<LearningCenter />} />
           <Route path="/profiles" element={<UserProfile />} />
           <Route path="/road" element={<VerticalRoadmap />} />
           <Route path="/shorts" element={<YouTubeShorts />} />
+          <Route path="/advisor" element={<FinancialAdvisor />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>
     </div>

@@ -154,10 +154,12 @@ const LearningCenter = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-500 to-green-700 text-white py-12">
+      <div className="bg-gradient-to-br from-green-50 to-green-200 text-white py-12">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl font-bold mb-4">Finance Learning Hub</h1>
-          <p className="text-lg">
+          <h1 className="text-4xl text-green-600 font-bold mb-4">
+            Finance Learning Hub
+          </h1>
+          <p className="text-lg text-green-600">
             Free resources to empower low-income families with financial
             knowledge.
           </p>

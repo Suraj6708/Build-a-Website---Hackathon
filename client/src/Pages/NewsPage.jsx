@@ -54,14 +54,14 @@ const NewsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-blue-900 mb-2">
+          <h1 className="text-4xl font-bold text-green-900 mb-2">
             Global News Hub
           </h1>
-          <p className="text-blue-600">
+          <p className="text-green-600">
             Stay informed with the latest news from around the world
           </p>
         </div>
@@ -79,10 +79,10 @@ const NewsPage = () => {
                 placeholder="Search news..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 rounded-lg border border-blue-200 
-                         focus:outline-none focus:border-blue-500"
+                className="w-full pl-10 pr-4 py-2 rounded-lg border border-green-200 
+                         focus:outline-none focus:border-green-500"
               />
-              <Search className="absolute left-3 top-2.5 text-blue-400 w-5 h-5" />
+              <Search className="absolute left-3 top-2.5 text-green-400 w-5 h-5" />
             </div>
 
             {/* Filter Tabs */}
@@ -93,8 +93,8 @@ const NewsPage = () => {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors
                           ${
                             activeTab === "top"
-                              ? "bg-blue-500 text-white"
-                              : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+                              ? "bg-green-500 text-white"
+                              : "bg-green-50 text-green-600 hover:bg-green-100"
                           }`}
               >
                 <Globe className="w-4 h-4" />
@@ -106,8 +106,8 @@ const NewsPage = () => {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors
                           ${
                             activeTab === "everything"
-                              ? "bg-blue-500 text-white"
-                              : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+                              ? "bg-green-500 text-white"
+                              : "bg-green-50 text-green-600 hover:bg-green-100"
                           }`}
               >
                 <Apple className="w-4 h-4" />
@@ -119,8 +119,8 @@ const NewsPage = () => {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors
                           ${
                             activeTab === "bbc"
-                              ? "bg-blue-500 text-white"
-                              : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+                              ? "bg-green-500 text-white"
+                              : "bg-green-50 text-green-600 hover:bg-green-100"
                           }`}
               >
                 <Radio className="w-4 h-4" />
@@ -133,7 +133,7 @@ const NewsPage = () => {
         {/* News Grid */}
         {loading ? (
           <div className="flex justify-center items-center py-12">
-            <RefreshCcw className="w-8 h-8 text-blue-500 animate-spin" />
+            <RefreshCcw className="w-8 h-8 text-green-500 animate-spin" />
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -154,7 +154,7 @@ const NewsPage = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-0 left-0 m-2">
-                      <span className="px-2 py-1 bg-blue-500 text-white text-sm rounded">
+                      <span className="px-2 py-1 bg-green-500 text-white text-sm rounded">
                         {article.source.name}
                       </span>
                     </div>

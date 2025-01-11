@@ -20,17 +20,17 @@ const CardContent = ({ children, className }) => (
 
 const UserProfile = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
       {/* Header Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-400 p-8">
+      <div className="bg-gradient-to-r from-green-600 to-green-400 p-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-6">
             <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center">
-              <Users size={48} className="text-blue-600" />
+              <Users size={48} className="text-green-600" />
             </div>
             <div className="text-white">
               <h1 className="text-3xl font-bold">John Doe</h1>
-              <p className="text-blue-100">Software Developer</p>
+              <p className="text-green-100">Software Developer</p>
               <p className="mt-2">San Francisco, CA</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const UserProfile = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Briefcase className="text-blue-600" />
+                    <Briefcase className="text-green-600" />
                     <h3 className="text-lg font-semibold">Current Job</h3>
                   </div>
                   <p>Senior Developer at Tech Corp</p>
@@ -84,7 +84,7 @@ const UserProfile = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Book className="text-blue-600" />
+                    <Book className="text-green-600" />
                     <h3 className="text-lg font-semibold">Learning Progress</h3>
                   </div>
                   <p>3 Courses Completed</p>
@@ -103,7 +103,7 @@ const UserProfile = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <Bike className="text-blue-600" />
+                    <Bike className="text-green-600" />
                     <div>
                       <p className="font-medium">Booked a bike ride</p>
                       <p className="text-sm text-gray-600">
@@ -112,14 +112,14 @@ const UserProfile = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <MessageCircle className="text-blue-600" />
+                    <MessageCircle className="text-green-600" />
                     <div>
                       <p className="font-medium">Posted in Community</p>
                       <p className="text-sm text-gray-600">2 days ago</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Image className="text-blue-600" />
+                    <Image className="text-green-600" />
                     <div>
                       <p className="font-medium">Shared a new photo</p>
                       <p className="text-sm text-gray-600">3 days ago</p>
@@ -134,7 +134,7 @@ const UserProfile = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <CheckSquare className="text-blue-600" />
+                    <CheckSquare className="text-green-600" />
                     <h3 className="text-lg font-semibold">Todo List</h3>
                   </div>
                   <div className="space-y-2">
@@ -148,7 +148,7 @@ const UserProfile = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Newspaper className="text-blue-600" />
+                    <Newspaper className="text-green-600" />
                     <h3 className="text-lg font-semibold">Tech News Feed</h3>
                   </div>
                   <div className="space-y-2">
