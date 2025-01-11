@@ -393,6 +393,13 @@ const LandingPage = () => {
         </button>
       </header>
       <Features t={t.features} />
+      <section className="py-12 bg-white text-center">
+        <h2 className="text-2xl font-bold text-green-800">
+          {t.businessIdeas.title}
+        </h2>
+        <p className="mt-2 text-green-600">{t.businessIdeas.subtitle}</p>
+        <BusinessIdeasScroll ideas={t.businessIdeas.ideas} />
+      </section>
       <section className="py-12 bg-gradient-to-br from-green-100 to-green-50">
         <h2 className="text-2xl font-bold text-green-800 text-center">
           {t.successStories.title}
@@ -401,13 +408,6 @@ const LandingPage = () => {
           {t.successStories.subtitle}
         </p>
         <SuccessStoryTimeline steps={t.successStories.steps} />
-      </section>
-      <section className="py-12 bg-white text-center">
-        <h2 className="text-2xl font-bold text-green-800">
-          {t.businessIdeas.title}
-        </h2>
-        <p className="mt-2 text-green-600">{t.businessIdeas.subtitle}</p>
-        <BusinessIdeasScroll ideas={t.businessIdeas.ideas} />
       </section>
       <Footer />
     </div>
