@@ -11,6 +11,7 @@ import {
   Pause,
   ArrowUpRight,
 } from "lucide-react";
+
 import Features from "../components/Features";
 import NavBar from "../components/NavBar"; // Import NavBar
 import Footer from "../components/Footer";
@@ -41,6 +42,11 @@ const translations = {
           link: "/profiles",
         },
         {
+          title: "Schemes & Benefits",
+          description: "View and manage detailed user profiles",
+          link: "/scheme",
+        },
+        {
           title: "Learning Center",
           description: "Access courses and educational content",
           link: "/learn",
@@ -58,31 +64,35 @@ const translations = {
       ],
     },
     successStories: {
-      title: "Our Journey to Success",
-      subtitle: "Follow our step-by-step process",
+      title: "Success Stories of the Underprivileged",
+      subtitle: "Inspiring journeys of overcoming adversity",
       steps: [
         {
-          title: "Discovery & Personalization",
+          title: "Rising from Poverty",
           description:
-            "We analyze your financial goals and create a personalized plan",
-          icon: "🎯",
+            "A story of determination and hard work leading to financial stability",
+          icon: "🌟",
+          youtubeId: "zZ-VeqYPxoA",
         },
         {
-          title: "Partners in Design",
+          title: "Empowering Women",
           description:
-            "Together we design your investment strategy and portfolio",
+            "How micro-financing helped women start their own businesses",
+          icon: "👩‍💼",
+          youtubeId: "i9UYbJ2xMTI",
+        },
+        {
+          title: "Education for All",
+          description: "Providing education to children in impoverished areas",
+          icon: "📚",
+          youtubeId: "VILohre4Q6w",
+        },
+        {
+          title: "Community Support",
+          description:
+            "Building a support network to uplift entire communities",
           icon: "🤝",
-        },
-        {
-          title: "Implementation",
-          description: "Execute the plan with our expert guidance",
-          icon: "⚡",
-        },
-        {
-          title: "Continuous Growth",
-          description:
-            "Regular monitoring and optimization of your investments",
-          icon: "📈",
+          youtubeId: "EsrJ_NKBkww",
         },
       ],
     },
@@ -146,6 +156,11 @@ const translations = {
           title: "उपयोगकर्ता प्रोफाइल",
           description: "विस्तृत उपयोगकर्ता प्रोफाइल देखें और प्रबंधित करें",
           link: "/profiles",
+        },
+        {
+          title: "योजना आणि लाभ",
+          description: "विस्तृत वापरकर्ता प्रोफाइल पहा आणि व्यवस्थापित करा",
+          link: "/scheme",
         },
         {
           title: "लर्निंग सेंटर",
@@ -229,28 +244,6 @@ const translations = {
   },
 };
 
-const steps = [
-  {
-    title: "Discovery & Personalization",
-    description:
-      "We analyze your financial goals and create a personalized plan.",
-    extraDescription: "Tailored plans ensure maximum efficiency and success.",
-    youtubeId: "suC_Y2eZtAw",
-  },
-  {
-    title: "Partners in Design",
-    description: "Together we design your investment strategy and portfolio.",
-    extraDescription: "Collaborative design leads to better outcomes.",
-    youtubeId: "suC_Y2eZtAw",
-  },
-  {
-    title: "Implementation",
-    description: "Execute the plan with our expert guidance.",
-    extraDescription: "Step-by-step guidance to achieve your goals.",
-    youtubeId: "suC_Y2eZtAw",
-  },
-];
-
 const SuccessStoryTimeline = ({ steps }) => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -275,7 +268,7 @@ const SuccessStoryTimeline = ({ steps }) => {
               <iframe
                 width="100%"
                 height="100%"
-                src={`https://www.youtube.com/embed/suC_Y2eZtAw?start=1&autoplay=0`}
+                src={`https://www.youtube.com/embed/${step.youtubeId}?start=1&autoplay=0`}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -399,7 +392,7 @@ const LandingPage = () => {
           {t.hero.cta}
         </button>
       </header>
-      <Features t={t.features} /> {/* Pass translations to Features */}
+      <Features t={t.features} />
       <section className="py-12 bg-gradient-to-br from-green-100 to-green-50">
         <h2 className="text-2xl font-bold text-green-800 text-center">
           {t.successStories.title}

@@ -12,6 +12,7 @@ import VerticalRoadmap from "./Pages/Roadmap";
 import YouTubeShorts from "./components/Shorts";
 import FinancialAdvisor from "./Pages/Heropage";
 import ErrorPage from "./components/ErrorPage";
+import GovernmentSchemes from "./Pages/GovernmentScheme";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/profiles" element={<UserProfile />} />
           <Route path="/road" element={<VerticalRoadmap />} />
           <Route path="/shorts" element={<YouTubeShorts />} />
-          <Route path="/advisor" element={<FinancialAdvisor />} />
+          <Route path="/scheme" element={<GovernmentSchemes />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>

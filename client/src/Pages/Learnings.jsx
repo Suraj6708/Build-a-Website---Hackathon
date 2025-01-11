@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Search, IndianRupee, Users, Home, Star } from "lucide-react";
+import NavBar from "../components/NavBar";
 
 const Card = ({ children, className = "" }) => (
   <div className={`bg-white rounded-lg shadow-lg overflow-hidden ${className}`}>
@@ -153,8 +154,9 @@ const LearningCenter = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <NavBar language="en" toggleLanguage={() => {}} />
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-green-50 to-green-200 text-white py-12">
+      <div className="bg-gradient-to-br from-green-50 to-green-200 text-white py-12 pt-24">
         <div className="max-w-6xl mx-auto px-6">
           <h1 className="text-4xl text-green-600 font-bold mb-4">
             Finance Learning Hub

@@ -24,22 +24,28 @@ const NavBar = ({ language, toggleLanguage }) => {
               Home
             </a>
             <a
-              href="/features"
+              href="/learn"
               className="text-green-800 hover:text-green-600 transition-colors"
             >
-              Features
+              Learnings
             </a>
             <a
-              href="/community"
+              href="/News"
               className="text-green-800 hover:text-green-600 transition-colors"
             >
-              Community
+              News
             </a>
             <a
-              href="l"
+              href="/road"
               className="text-green-800 hover:text-green-600 transition-colors"
             >
-              Learning
+              Learning Roadmap
+            </a>
+            <a
+              href="/profiles"
+              className="text-green-800 hover:text-green-600 transition-colors"
+            >
+              Profile
             </a>
             <button
               onClick={toggleLanguage}
