@@ -53,31 +53,31 @@ const translations = {
           title: "User Profiles",
           description: "View and manage detailed user profiles",
           link: "/profiles",
-          icon: UserCheck,
+          icon: User,
         },
         {
           title: "Schemes & Benefits",
           description: "View and manage detailed user profiles",
           link: "/scheme",
-          icon: Award,
+          icon: Shield,
         },
         {
           title: "Learning Center",
           description: "Access courses and educational content",
           link: "/learn",
-          icon: Book,
+          icon: BookOpen,
         },
         {
           title: "Roadmap",
           description: "Access courses and educational content",
           link: "/road",
-          icon: Compass,
+          icon: Map,
         },
         {
           title: "Daily Tech News",
           description: "Stay updated with the latest tech news",
           link: "/news",
-          icon: News,
+          icon: Newspaper,
         },
         {
           title: "PPF Calculator",
@@ -90,42 +90,42 @@ const translations = {
           description:
             "Empowering women through financial independence and support",
           link: "/womens",
-          icon: BadgeSwissFranc,
+          icon: Users,
         },
         {
           title: "Microinvestment Opportunities",
           description:
             "Explore the latest investment opportunities for small investors",
           link: "/mip",
-          icon: BadgeSwissFranc,
+          icon: BadgeDollarSign,
         },
         {
           title: "Rural Business Opportunities",
           description:
             "Explore the latest investment opportunities for small investors",
           link: "/rural",
-          icon: BadgeSwissFranc,
+          icon: Briefcase,
         },
         {
           title: "Community ",
           description:
             "Join the community to discuss and share ideas with other users",
           link: "/community",
-          icon: BadgeSwissFranc,
+          icon: Users,
         },
         {
           title: "Success Stories",
           description:
             "Read inspiring stories of individuals who have overcome adversity",
           link: "/stories",
-          icon: BadgeSwissFranc,
+          icon: Award,
         },
         {
           title: "QnA Sessions",
           description:
             "Participate in live QnA sessions with financial experts",
           link: "/qna",
-          icon: BadgeSwissFranc,
+          icon: GraduationCap,
         },
       ],
     },
