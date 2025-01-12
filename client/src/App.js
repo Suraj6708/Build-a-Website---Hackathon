@@ -23,6 +23,8 @@ import RuralBusinessOpportunities from "./Pages/ruralbusiness";
 import Chatbot from "./Pages/chatbot";
 import DiscussionForums from "./Pages/community";
 import DairyForumPage from "./Pages/dairyforum";
+import SuccessStories from "./Pages/SuccessStoriesAvi";
+import QASessions from "./Pages/qna";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/community" element={<DiscussionForums />} />
           <Route path="/dairy" element={<DairyForumPage />} />
+          <Route path="/stories" element={<SuccessStories />} />
+          <Route path="/qna" element={<QASessions />} />
 
         </Routes>
       </AuthProvider>
