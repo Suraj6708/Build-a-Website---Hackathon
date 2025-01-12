@@ -21,6 +21,7 @@ import MicroinvestmentPlatform from "./Pages/mip";
 import PoultryFarmGuide from "./Pages/poultry";
 import RuralBusinessOpportunities from "./Pages/ruralbusiness";
 import Chatbot from "./Pages/chatbot";
+import DiscussionForums from "./Pages/community";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/poultry" element={<PoultryFarmGuide />} />
           <Route path="/rural" element={<RuralBusinessOpportunities />} />
           <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/community" element={<DiscussionForums />} />
 
         </Routes>
       </AuthProvider>
