@@ -17,6 +17,8 @@ import PPFCalculator from "./Pages/PpfCalculator";
 import WomenEmpowerment from "./Pages/WomensSection";
 import ChatbotButton from "./components/ChatbobtButton";
 
+import MicroinvestmentPlatform from "./Pages/mip";
+
 function App() {
   return (
     <div className="App">
@@ -37,6 +39,8 @@ function App() {
           <Route path="/ppf" element={<PPFCalculator />} />
           <Route path="/womens" element={<WomenEmpowerment />} />
           <Route path="*" element={<ErrorPage />} />
+
+          <Route path="/mip" element={<MicroinvestmentPlatform />} />
         </Routes>
       </AuthProvider>
     </div>

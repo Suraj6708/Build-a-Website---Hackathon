@@ -92,6 +92,13 @@ const translations = {
           link: "/womens",
           icon: BadgeSwissFranc,
         },
+        {
+          title: "Microinvestment Opportunities",
+          description:
+            "Explore the latest investment opportunities for small investors",
+          link: "/mip",
+          icon: BadgeSwissFranc,
+        },
       ],
     },
     successStories: {
