@@ -18,6 +18,7 @@ import WomenEmpowerment from "./Pages/WomensSection";
 import ChatbotButton from "./components/ChatbobtButton";
 
 import MicroinvestmentPlatform from "./Pages/mip";
+import PoultryFarmGuide from "./Pages/poultry";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
 
           <Route path="/mip" element={<MicroinvestmentPlatform />} />
+          <Route path="/poultry" element={<PoultryFarmGuide />} />
         </Routes>
       </AuthProvider>
     </div>
