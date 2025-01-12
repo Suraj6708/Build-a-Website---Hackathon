@@ -42,7 +42,7 @@ function App() {
           <Route path="/profiles" element={<UserProfile />} />
           <Route path="/road" element={<VerticalRoadmap />} />
           <Route path="/shorts" element={<YouTubeShorts />} />
-          <Route path="/schemes" element={<GovernmentSchemes />} />
+          <Route path="/scheme" element={<GovernmentSchemes />} />
           <Route path="/ppf" element={<PPFCalculator />} />
           <Route path="/womens" element={<WomenEmpowerment />} />
           <Route path="*" element={<ErrorPage />} />

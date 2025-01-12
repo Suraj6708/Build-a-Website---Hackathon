@@ -82,7 +82,8 @@ const DiscussionForums = () => {
                 </div>
 
                 <button
-                  onClick={() => handleJoinForum(forum.id)}
+                  onClick={() => {handleJoinForum(forum.id);window.location.href = '/dairy';}}
+                  
                   className={`w-full py-2 px-4 rounded-lg font-medium transition-colors duration-300 ${
                     joinedForums.has(forum.id)
                       ? 'bg-green-100 text-green-800 hover:bg-green-200'

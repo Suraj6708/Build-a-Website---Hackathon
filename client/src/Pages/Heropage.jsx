@@ -106,6 +106,27 @@ const translations = {
           link: "/rural",
           icon: BadgeSwissFranc,
         },
+        {
+          title: "Community ",
+          description:
+            "Join the community to discuss and share ideas with other users",
+          link: "/community",
+          icon: BadgeSwissFranc,
+        },
+        {
+          title: "Success Stories",
+          description:
+            "Read inspiring stories of individuals who have overcome adversity",
+          link: "/stories",
+          icon: BadgeSwissFranc,
+        },
+        {
+          title: "QnA Sessions",
+          description:
+            "Participate in live QnA sessions with financial experts",
+          link: "/qna",
+          icon: BadgeSwissFranc,
+        },
       ],
     },
     successStories: {
@@ -139,42 +160,52 @@ const translations = {
           icon: "🤝",
           youtubeId: "EsrJ_NKBkww",
         },
+        {
+          title: "Community Support",
+          description:
+            "Building a support network to uplift entire communities",
+          icon: "🤝",
+          youtubeId: "EsrJ_NKBkww",
+        },
       ],
     },
     businessIdeas: {
       title: "Trending Business Ideas",
       subtitle: "Scroll to explore opportunities",
       ideas: [
-        {
-          title: "Digital Marketing",
-          description: "Start your own digital marketing agency",
-          icon: "📱",
-        },
-        {
-          title: "E-learning Platform",
-          description: "Create and sell online courses",
-          icon: "🎓",
-        },
-        {
-          title: "Fintech Solutions",
-          description: "Develop financial technology products",
-          icon: "💳",
-        },
-        {
-          title: "Green Business",
-          description: "Sustainable and eco-friendly ventures",
-          icon: "🌱",
-        },
-        {
-          title: "Health Tech",
-          description: "Healthcare technology solutions",
-          icon: "⚕️",
-        },
-        {
-          title: "E-commerce",
-          description: "Online retail and marketplace",
-          icon: "🛍️",
-        },
+        
+          {
+            title: "Poultry Farming",
+            description: "Start your own chicken and egg production farm",
+            icon: "🐔",
+          },
+          {
+            title: "Local Grocery Store",
+            description: "Set up a store for essential food and household items",
+            icon: "🛒",
+          },
+          {
+            title: "Fishery Business",
+            description: "Raise and sell fish for local and regional markets",
+            icon: "🐟",
+          },
+          {
+            title: "Organic Farming",
+            description: "Cultivate and sell organic fruits and vegetables",
+            icon: "🥦",
+          },
+          {
+            title: "Dairy Farming",
+            description: "Produce milk and other dairy products",
+            icon: "🐄",
+          },
+          {
+            title: "Handicrafts",
+            description: "Make and sell handmade goods like baskets and pottery",
+            icon: "🎨",
+          },
+        
+        
       ],
     },
   },
