@@ -99,6 +99,13 @@ const translations = {
           link: "/mip",
           icon: BadgeSwissFranc,
         },
+        {
+          title: "Rural Business Opportunities",
+          description:
+            "Explore the latest investment opportunities for small investors",
+          link: "/rural",
+          icon: BadgeSwissFranc,
+        },
       ],
     },
     successStories: {

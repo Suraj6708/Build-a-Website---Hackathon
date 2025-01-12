@@ -19,6 +19,7 @@ import ChatbotButton from "./components/ChatbobtButton";
 
 import MicroinvestmentPlatform from "./Pages/mip";
 import PoultryFarmGuide from "./Pages/poultry";
+import RuralBusinessOpportunities from "./Pages/ruralbusiness";
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
 
           <Route path="/mip" element={<MicroinvestmentPlatform />} />
           <Route path="/poultry" element={<PoultryFarmGuide />} />
+          <Route path="/rural" element={<RuralBusinessOpportunities />} />
+
         </Routes>
       </AuthProvider>
     </div>
