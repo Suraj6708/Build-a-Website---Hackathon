@@ -22,6 +22,7 @@ import PoultryFarmGuide from "./Pages/poultry";
 import RuralBusinessOpportunities from "./Pages/ruralbusiness";
 import Chatbot from "./Pages/chatbot";
 import DiscussionForums from "./Pages/community";
+import DairyForumPage from "./Pages/dairyforum";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/rural" element={<RuralBusinessOpportunities />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/community" element={<DiscussionForums />} />
+          <Route path="/dairy" element={<DairyForumPage />} />
 
         </Routes>
       </AuthProvider>
