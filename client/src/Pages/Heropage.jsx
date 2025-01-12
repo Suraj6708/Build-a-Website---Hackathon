@@ -22,7 +22,7 @@ import {
   Compass,
   Newspaper as News,
   Calculator as Calc,
-  BadgeSwissFranc,
+  BadgeSwissFranc, FileText, Bot
 } from "lucide-react";
 
 import Features from "../components/Features";
@@ -48,18 +48,92 @@ const translations = {
       title: "Why Choose Us",
       description:
         "Discover the tools and resources that make us your ideal partner in your journey to success.",
+      // items: [
+      //   {
+      //     title: "User Profiles",
+      //     description: "View and manage detailed user profiles",
+      //     link: "/profiles",
+      //     icon: User,
+      //   },
+      //   {
+      //     title: "Schemes & Benefits",
+      //     description: "View and manage detailed user profiles",
+      //     link: "/scheme",
+      //     icon: Shield,
+      //   },
+      //   {
+      //     title: "Learning Center",
+      //     description: "Access courses and educational content",
+      //     link: "/learn",
+      //     icon: BookOpen,
+      //   },
+      //   {
+      //     title: "Roadmap",
+      //     description: "Access courses and educational content",
+      //     link: "/road",
+      //     icon: Map,
+      //   },
+      //   {
+      //     title: "Daily Tech News",
+      //     description: "Stay updated with the latest tech news",
+      //     link: "/news",
+      //     icon: Newspaper,
+      //   },
+      //   {
+      //     title: "PPF Calculator",
+      //     description: "Calculate your PPF investments and returns",
+      //     link: "/ppf",
+      //     icon: Calculator,
+      //   },
+      //   {
+      //     title: "Women's Portal",
+      //     description:
+      //       "Empowering women through financial independence and support",
+      //     link: "/womens",
+      //     icon: Users,
+      //   },
+      //   {
+      //     title: "Microinvestment Opportunities",
+      //     description:
+      //       "Explore the latest investment opportunities for small investors",
+      //     link: "/mip",
+      //     icon: BadgeDollarSign,
+      //   },
+      //   {
+      //     title: "Rural Business Opportunities",
+      //     description:
+      //       "Explore the latest investment opportunities for small investors",
+      //     link: "/rural",
+      //     icon: Briefcase,
+      //   },
+      //   {
+      //     title: "Community ",
+      //     description:
+      //       "Join the community to discuss and share ideas with other users",
+      //     link: "/community",
+      //     icon: Users,
+      //   },
+      //   {
+      //     title: "Success Stories",
+      //     description:
+      //       "Read inspiring stories of individuals who have overcome adversity",
+      //     link: "/stories",
+      //     icon: Award,
+      //   },
+      //   {
+      //     title: "QnA Sessions",
+      //     description:
+      //       "Participate in live QnA sessions with financial experts",
+      //     link: "/qna",
+      //     icon: GraduationCap,
+      //   },
+      // ],
       items: [
         {
-          title: "User Profiles",
-          description: "View and manage detailed user profiles",
-          link: "/profiles",
-          icon: User,
-        },
-        {
-          title: "Schemes & Benefits",
-          description: "View and manage detailed user profiles",
-          link: "/scheme",
-          icon: Shield,
+          title: "Financial Advisor - Chatbot",
+          description: "Get personalized financial advice from our AI-powered chatbot",
+          link: "/advisor",
+          icon: Bot,
         },
         {
           title: "Learning Center",
@@ -69,65 +143,60 @@ const translations = {
         },
         {
           title: "Roadmap",
-          description: "Access courses and educational content",
+          description: "Explore a tailored roadmap to financial success",
           link: "/road",
           icon: Map,
         },
         {
-          title: "Daily Tech News",
-          description: "Stay updated with the latest tech news",
-          link: "/news",
-          icon: Newspaper,
-        },
-        {
-          title: "PPF Calculator",
-          description: "Calculate your PPF investments and returns",
-          link: "/ppf",
-          icon: Calculator,
-        },
-        {
-          title: "Women's Portal",
-          description:
-            "Empowering women through financial independence and support",
-          link: "/womens",
-          icon: Users,
-        },
-        {
           title: "Microinvestment Opportunities",
-          description:
-            "Explore the latest investment opportunities for small investors",
+          description: "Explore the latest investment opportunities for small investors",
           link: "/mip",
           icon: BadgeDollarSign,
         },
         {
           title: "Rural Business Opportunities",
-          description:
-            "Explore the latest investment opportunities for small investors",
+          description: "Explore business opportunities in rural India",
           link: "/rural",
           icon: Briefcase,
         },
         {
-          title: "Community ",
-          description:
-            "Join the community to discuss and share ideas with other users",
+          title: "Schemes & Benefits",
+          description: "View and manage detailed government schemes and benefits",
+          link: "/scheme",
+          icon: Shield,
+        },
+        {
+          title: "Community",
+          description: "Join the community to discuss and share ideas with other users",
           link: "/community",
           icon: Users,
         },
         {
+          title: "QnA Sessions",
+          description: "Participate in live QnA sessions with financial experts",
+          link: "/qna",
+          icon: GraduationCap,
+        },
+        {
           title: "Success Stories",
-          description:
-            "Read inspiring stories of individuals who have overcome adversity",
+          description: "Read inspiring stories of individuals who have overcome adversity",
           link: "/stories",
           icon: Award,
         },
         {
-          title: "QnA Sessions",
-          description:
-            "Participate in live QnA sessions with financial experts",
-          link: "/qna",
-          icon: GraduationCap,
+          title: "Women's Portal",
+          description: "Empowering women through financial independence and support",
+          link: "/womens",
+          icon: Users,
         },
-      ],
+        {
+          title: "OCR Based Finance Doc Reading",
+          description: "Scan and understand financial documents with AI-powered OCR",
+          link: "/ocr",
+          icon: FileText,
+        },
+      ]
+      
     },
     successStories: {
       title: "Success Stories of the Underprivileged",
