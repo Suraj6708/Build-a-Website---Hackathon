@@ -5,7 +5,7 @@ const NavBar = ({ language, toggleLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -24,10 +24,16 @@ const NavBar = ({ language, toggleLanguage }) => {
               Home
             </a>
             <a
-              href="/learn"
+              href="/ppf"
               className="text-green-800 hover:text-green-600 transition-colors"
             >
-              Learnings
+              PPF
+            </a>
+            <a
+              href="/schemes"
+              className="text-green-800 hover:text-green-600 transition-colors"
+            >
+              Scheme
             </a>
             <a
               href="/News"

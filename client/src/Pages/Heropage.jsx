@@ -10,6 +10,19 @@ import {
   Play,
   Pause,
   ArrowUpRight,
+  User,
+  Briefcase,
+  GraduationCap,
+  Map,
+  Newspaper,
+  Calculator,
+  UserCheck,
+  Award,
+  Book,
+  Compass,
+  Newspaper as News,
+  Calculator as Calc,
+  BadgeSwissFranc,
 } from "lucide-react";
 
 import Features from "../components/Features";
@@ -40,26 +53,44 @@ const translations = {
           title: "User Profiles",
           description: "View and manage detailed user profiles",
           link: "/profiles",
+          icon: UserCheck,
         },
         {
           title: "Schemes & Benefits",
           description: "View and manage detailed user profiles",
           link: "/scheme",
+          icon: Award,
         },
         {
           title: "Learning Center",
           description: "Access courses and educational content",
           link: "/learn",
+          icon: Book,
         },
         {
           title: "Roadmap",
           description: "Access courses and educational content",
           link: "/road",
+          icon: Compass,
         },
         {
           title: "Daily Tech News",
           description: "Stay updated with the latest tech news",
           link: "/news",
+          icon: News,
+        },
+        {
+          title: "PPF Calculator",
+          description: "Calculate your PPF investments and returns",
+          link: "/ppf",
+          icon: Calculator,
+        },
+        {
+          title: "Women's Portal",
+          description:
+            "Empowering women through financial independence and support",
+          link: "/womens",
+          icon: BadgeSwissFranc,
         },
       ],
     },
@@ -156,26 +187,44 @@ const translations = {
           title: "उपयोगकर्ता प्रोफाइल",
           description: "विस्तृत उपयोगकर्ता प्रोफाइल देखें और प्रबंधित करें",
           link: "/profiles",
+          icon: <UserCheck />,
         },
         {
           title: "योजना आणि लाभ",
           description: "विस्तृत वापरकर्ता प्रोफाइल पहा आणि व्यवस्थापित करा",
           link: "/scheme",
+          icon: <Award />,
         },
         {
           title: "लर्निंग सेंटर",
           description: "पाठ्यक्रमों और शैक्षिक सामग्री तक पहुंचें",
           link: "/learn",
+          icon: <Book />,
         },
         {
           title: "रोडमैप",
           description: "पाठ्यक्रमों और शैक्षिक सामग्री तक पहुंचें",
           link: "/road",
+          icon: <Compass />,
         },
         {
           title: "दैनिक टेक समाचार",
           description: "नवीनतम तकनीकी समाचारों से अपडेट रहें",
           link: "/news",
+          icon: <News />,
+        },
+        {
+          title: "पीपीएफ कैलकुलेटर",
+          description: "अपने पीपीएफ निवेश और रिटर्न की गणना करें",
+          link: "/ppf",
+          icon: <Calc />,
+        },
+        {
+          title: "महिला पोर्टल",
+          description:
+            "वित्तीय स्वतंत्रता और समर्थन के माध्यम से महिलाओं को सशक्त बनाना",
+          link: "/womens-portal",
+          icon: <BadgeSwissFranc />,
         },
       ],
     },
@@ -382,35 +431,37 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
-      <NavBar language={language} toggleLanguage={toggleLanguage} t={t.nav} />{" "}
-      {/* Use NavBar */}
-      <header className="text-center py-24">
-        <h1 className="text-4xl font-bold text-green-800">{t.hero.title}</h1>
-        <p className="mt-4 text-green-600">{t.hero.subtitle}</p>
-        <button className="mt-6 px-8 py-3 bg-green-500 text-white font-semibold rounded-lg">
-          {t.hero.cta}
-        </button>
-      </header>
-      <Features t={t.features} />
-      <section className="py-12 bg-white text-center">
-        <h2 className="text-2xl font-bold text-green-800">
-          {t.businessIdeas.title}
-        </h2>
-        <p className="mt-2 text-green-600">{t.businessIdeas.subtitle}</p>
-        <BusinessIdeasScroll ideas={t.businessIdeas.ideas} />
-      </section>
-      <section className="py-12 bg-gradient-to-br from-green-100 to-green-50">
-        <h2 className="text-2xl font-bold text-green-800 text-center">
-          {t.successStories.title}
-        </h2>
-        <p className="mt-2 text-green-600 text-center">
-          {t.successStories.subtitle}
-        </p>
-        <SuccessStoryTimeline steps={t.successStories.steps} />
-      </section>
-      <Footer />
-    </div>
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
+        <NavBar language={language} toggleLanguage={toggleLanguage} t={t.nav} />{" "}
+        {/* Use NavBar */}
+        <header className="text-center py-24">
+          <h1 className="text-4xl font-bold text-green-800">{t.hero.title}</h1>
+          <p className="mt-4 text-green-600">{t.hero.subtitle}</p>
+          <button className="mt-6 px-8 py-3 bg-green-500 text-white font-semibold rounded-lg">
+            {t.hero.cta}
+          </button>
+        </header>
+        <Features t={t.features} />
+        <section className="py-12 bg-white text-center">
+          <h2 className="text-2xl font-bold text-green-800">
+            {t.businessIdeas.title}
+          </h2>
+          <p className="mt-2 text-green-600">{t.businessIdeas.subtitle}</p>
+          <BusinessIdeasScroll ideas={t.businessIdeas.ideas} />
+        </section>
+        <section className="py-12 bg-gradient-to-br from-green-100 to-green-50">
+          <h2 className="text-2xl font-bold text-green-800 text-center">
+            {t.successStories.title}
+          </h2>
+          <p className="mt-2 text-green-600 text-center">
+            {t.successStories.subtitle}
+          </p>
+          <SuccessStoryTimeline steps={t.successStories.steps} />
+        </section>
+        <Footer />
+      </div>
+    </>
   );
 };
 

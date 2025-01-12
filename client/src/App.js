@@ -13,10 +13,15 @@ import YouTubeShorts from "./components/Shorts";
 import FinancialAdvisor from "./Pages/Heropage";
 import ErrorPage from "./components/ErrorPage";
 import GovernmentSchemes from "./Pages/GovernmentScheme";
+import PPFCalculator from "./Pages/PpfCalculator";
+import WomenEmpowerment from "./Pages/WomensSection";
+import ChatbotButton from "./components/ChatbobtButton";
 
 function App() {
   return (
     <div className="App">
+      <ChatbotButton />
+
       <AuthProvider>
         <ToastContainer />
         <Routes>
@@ -29,6 +34,8 @@ function App() {
           <Route path="/road" element={<VerticalRoadmap />} />
           <Route path="/shorts" element={<YouTubeShorts />} />
           <Route path="/scheme" element={<GovernmentSchemes />} />
+          <Route path="/ppf" element={<PPFCalculator />} />
+          <Route path="/womens" element={<WomenEmpowerment />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>

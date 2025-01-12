@@ -1,5 +1,4 @@
 import React from "react";
-import { UserCircle, BookOpen, Newspaper } from "lucide-react";
 
 const Features = ({ t }) => {
   const features = t.items;
@@ -25,7 +24,9 @@ const Features = ({ t }) => {
 
               <div className="relative p-8 bg-green-50 h-full group-hover:bg-opacity-90 transition-all duration-300 rounded-xl">
                 <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                  <UserCircle className="h-14 w-14 text-gray-800 group-hover:text-green" />
+                  {React.createElement(feature.icon, {
+                    className: "h-14 w-14 text-gray-800 group-hover:text-green",
+                  })}
                 </div>
 
                 <h3 className="text-2xl font-semibold text-gray-800 mb-3 group-hover:text-green">
